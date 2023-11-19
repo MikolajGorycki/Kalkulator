@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9ed"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/calosc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calosc" />
+    <TextView
+        android:id="@+id/calosc"
+        android:layout_width="374dp"
+        android:layout_height="53dp"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/rezultat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/rezultat"
+        android:layout_width="373dp"
+        android:layout_height="73dp"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textSize="60sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="394dp"
+        android:layout_height="541dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831">
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline2"
+            android:onClick="onClickC"
+            android:text="C"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/CE"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline2"
+            android:onClick="onClickCE"
+            android:text="CE"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline2"
+            android:onClick="onClickBack"
+            android:text="Back"
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/divide"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline3"
+            android:onClick="onClickOperator"
+            android:text="/"
+            android:textSize="24sp"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/number7"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickDigit"
+            android:text="7"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/number8"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickDigit"
+            android:text="8"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/number9"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickDigit"
+            android:text="9"
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/times"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline3"
+            android:onClick="onClickOperator"
+            android:text="X"
+            android:textSize="24sp"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/number4"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickDigit"
+            android:text="4"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/number5"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickDigit"
+            android:text="5"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/number6"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickDigit"
+            android:text="6"
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline3"
+            android:onClick="onClickOperator"
+            android:text="-"
+            android:textSize="24sp"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/number1"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickDigit"
+            android:text="1"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/number2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickDigit"
+            android:text="2"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/number3"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickDigit"
+            android:text="3"
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/plus"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline3"
+            android:onClick="onClickOperator"
+            android:text="+"
+            android:textSize="24sp"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/negative"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickPlusMinus"
+            android:text="+/-"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/fact"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline3"
+            android:onClick="onClickOperator"
+            android:text="!"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/power"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline3"
+            android:onClick="onClickOperator"
+            android:text="x^y"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/over"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline3"
+            android:onClick="onClickOperator"
+            android:text="(n k)"
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/mod"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline3"
+            android:onClick="onClickOperator"
+            android:text="mod"
+            android:textSize="24sp"
+            app:layout_column="3"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/number0"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickDigit"
+            android:text="0"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline"
+            android:onClick="onClickDot"
+            android:text="."
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/equals"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:background="@drawable/outline3"
+            android:onClick="onClickEqual"
+            android:text="="
+            android:textSize="24sp"
+            app:layout_column="3"
+            app:layout_row="4" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
